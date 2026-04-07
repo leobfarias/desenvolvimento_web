@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 1 – Texto, Senha e E-mail</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2>Cadastro simples</h2>
+
+  <!-- action="/resultado" → envia para a rota POST /resultado -->
+  <!-- method="post"       → usa o método HTTP POST            -->
+  <form action="/resultado" method="post">
+
+    <!-- type="text" → campo de texto livre -->
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+
+    <!-- type="email" → o navegador valida o formato do e-mail -->
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+
+    <!-- type="password" → os caracteres ficam ocultos na tela -->
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres">
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXERCÍCIO 9</title>
+    </head>
+    <body>
+        <h1>Relátorio</h1> 
+
+        <form method="POST" action="/relatorio">
+
+            <label for="tipo">Tipo de Relatório:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecione o tipo de relatório</option>
+                <option value="progresso">Progresso</option>
+                <option value="participacao">Participação</option>
+                <option value="entregas">Entregas</option>
+            </select>
+            <br><br>
+
+            <label for="periodo_inicio">Período de Início:</label>
+            <input type="date" id="periodo_inicio" name="periodo_inicio" required>
+            <br/><br/>
+
+            <label for="periodo_fim">Período de Fim:</label>
+            <input type="date" id="periodo_fim" name="periodo_fim" required>
+            <br/><br/>
+
+            <label for="projeto">Projeto:</label>
+            <select id="projeto" name="projeto" required>
+                <option value="">Selecione um projeto</option>
+                <option value="Projeto A">Projeto A</option>
+                <option value="Projeto B">Projeto B</option>
+                <option value="Projeto C">Projeto C</option>
+            </select>
+            <br/><br/>
+
+            <input type="submit" value="Gerar Relatório">
+            <input type="reset" value="Resetar">
+        </form>
+    </body>
+</html>

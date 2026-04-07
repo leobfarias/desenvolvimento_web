@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXERCÍCIO 10</title>
+    </head>
+    <body>
+        <h1>Cadastro de Eventos Externos</h1>
+
+        <form method="POST" action="/cadastro/eventos/externos">
+
+            <label for="nome">Nome do Evento:</label>
+            <input type="name" id="nome" name="nome" required>
+            <br><br>
+
+            <label for="tipo">Tipo de Evento:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecione o tipo de evento</option>
+                <option value="workshop">Workshop</option>
+                <option value="oficina">Oficina</option>
+                <option value="congresso">Congresso</option>
+            </select>
+            <br><br>
+
+            <label for="data">Data do Evento:</label>
+            <input type="datetime-local" id="data" name="data" required>
+            <br><br>
+
+            <label for="local">Local do Evento:</label>
+            <input type="text" id="local" name="local" required>
+            <br><br>
+
+            <label for="publico">Público-Alvo:</label>
+            <input type="text" id="publico" name="publico" required>
+            <br><br>
+
+            <label for="associacao">Associação com Projetos:</label>
+            <input type="text" id="associacao" name="associacao" required>
+            <br><br>
+            
+            <input type="submit" value="Cadastrar Evento">
+            <input type="reset" value="Resetar">
+        </form>
+    </body>
+</html>
+
+        

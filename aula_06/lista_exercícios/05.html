@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXERCÍCIO 5</title>
+    </head>
+    <body>
+        <h1>Agendamento de Reuniões</h1>
+        
+        <form method="POST" action="/reunioes">
+
+            <label for="projeto">Projeto:</label>
+            <select id="projeto" name="projeto" required>
+                <option value="">Selecione um projeto</option>
+                <option value="Projeto A">Projeto A</option>
+                <option value="Projeto B">Projeto B</option>
+                <option value="Projeto C">Projeto C</option>
+            </select>
+            <br/><br/>
+
+            <label for="pauta">Pauta da Reunião:</label>
+            <input type="text" id="pauta" name="pauta" required>
+            <br/><br/>
+
+            <label for="data">Data da Reunião:</label>
+            <input type="datetime-local" id="data" name="data" required>
+            <br/><br/>
+
+            <label for="local">Local ou Link:</label>
+            <input type="text" id="local" name="local" required>
+            <br/><br/>
+
+            <label for="participantes">Participantes:</label><br><br>
+            <input type="checkbox" id="participante1" name="participantes" value="Participante 1">
+            <label for="participante1">Participante 1</label><br>
+            <input type="checkbox" id="participante2" name="participantes" value="Participante 2">
+            <label for="participante2">Participante 2</label><br>
+            <input type="checkbox" id="participante3" name="participantes" value="Participante 3">
+            <label for="participante3">Participante 3</label>
+            <br/><br/>
+
+            <label for="anotacao">Anotações prévias:</label><br><br>
+            <textarea id="anotacao" name="anotacao" rows="4" cols="50"></textarea>
+            <br/><br/>
+
+            <input type="submit" value="Agendar">
+            <input type="reset" value="Resetar">
+        </form>
+    </body>
+</html>

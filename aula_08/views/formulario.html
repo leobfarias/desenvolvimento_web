@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo 2 - Checkbox e Radio Buttons</title>
+        <link rel="stylesheet" href="../public/css/style.css">
+    </head>
+    <body>
+        <h2>Pesquisa de preferências</h2>
+
+        <form method="POST" action="/resultado">
+
+            <fieldset>
+                <legend>Período preferido para estudar</legend>
+
+                <label>
+                    <input type="radio" name="periodo" value="manha"> Manhã
+                </label>
+                <label>
+                    <input type="radio" name="periodo" value="tarde"> Tarde
+                </label>
+                <label>
+                    <input type="radio" name="periodo" value="noite"> Noite
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Linguagens que você conhece</legend>
+                <label>
+                    <input type="checkbox" name="linguagens[]" value="python"> Python
+                </label>
+                <label>
+                    <input type="checkbox" name="linguagens[]" value="javascript"> JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="linguagens[]" value="java"> Java
+                </label>
+                <label>
+                    <input type="checkbox" name="linguagens[]" value="c#"> C#
+                </label>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>
